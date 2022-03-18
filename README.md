@@ -21,7 +21,7 @@ sudo cp startup.sh /usr/local/bin/
 There are two ways you may comfortable with:
 
 1. When you log in, this script runs automatically.
-2. Manually run the `startup.sh` when logging in.
+2. Manually run the `vpn.sh` when logging in.
 
 ## Run script at login (Ubuntu)
 
