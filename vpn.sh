@@ -1,8 +1,8 @@
 #!/bin/bash
 <<INFO
-Date: 2022 Match 17 01:50 AM
+Date: 2022 Match 17
 Author: Prakhar Khandelwal
-Purpose: To automatically connect to vpn whenever user logs in or networks changes.
+Purpose: To automatically connect to vpn whenever networks changes.
 INFO
 
 ################# VARIABLEs ######################
@@ -67,7 +67,6 @@ function checkNetwork() {
 }
 
 # Connects to VPN
-# Start enter your VPN connectivity commands
 function connectToVPN() {
         _temp=$(populateIP)
         if [[ ${_temp} == "" || ${_temp} != ${_OCTET} ]]; then return; fi;
@@ -89,12 +88,12 @@ function connectToVPN() {
 
 echo "VPN Startup"
 
-# Exit if no network found
+# EXIT if no network found
 OCTET=$(populateIP)
 checkNetwork "Init" $OCTET ""
 isConnected="true"
 
-# Loop till manual interruption or no networks
+# Loop till manual interruption or retry limit exceeds
 for(( ; ; ))
 do
         if [[ ${isConnected} == "true" ]]

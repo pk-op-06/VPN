@@ -1,6 +1,6 @@
 #!/bin/bash
 <<INFO
-Date: 2022 Match 17 01:50 AM
+Date: 2022 Match 17
 Author: Prakhar Khandelwal
 Purpose: To run vpn.sh script on user login on a new terminal
 INFO
