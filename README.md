@@ -13,7 +13,7 @@ Download both these files into your system
 
 ```
 sudo cp vpn.sh /usr/local/bin/
-sudo cp startup-pk.sh /usr/local/bin/
+sudo cp startup.sh /usr/local/bin/
 ```
 
 # Step 2
