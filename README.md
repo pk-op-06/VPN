@@ -57,4 +57,8 @@ _password_
 
 `auth-user-pass /etc/openvpn/client.cred`
 
+# Step 4
+
+Don't forget to update the location of your `.ovpn` file at line <a href="https://github.com/pk-op-06/at-dev-startup/blob/master/vpn.sh#L79">79</a>
+
 ## Congratulations!! You are good to go.
